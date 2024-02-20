@@ -6,7 +6,7 @@ var H5P = H5P || {};
  */
 H5P.GoalsPage = (function ($, EventDispatcher) {
   // CSS Classes:
-  var MAIN_CONTAINER = 'h5p-goals-page';
+  var MAIN_CONTAINER = 'h5p-goals-page-xr';
 
   var goalCounter = 0;
 
@@ -164,7 +164,7 @@ H5P.GoalsPage = (function ($, EventDispatcher) {
     var self = this;
 
     // Create new goal on click
-    H5P.DocumentationTool.handleButtonClick(self.$createGoalButton, function () {
+    H5P.DocumentationToolXR.handleButtonClick(self.$createGoalButton, function () {
       self.addGoal().find('.created-goal').focus();
       self.trigger('resize');
     });

@@ -1,5 +1,5 @@
 {
-  "title": "Goals page",
+  "title": "Goals page (XR)",
   "description": "A page where you can make a list of goals.",
   "majorVersion": 1,
   "minorVersion": 5,
@@ -7,22 +7,22 @@
   "runnable": 0,
   "author": "Joubel",
   "license": "MIT",
-  "machineName": "H5P.GoalsPage",
+  "machineName": "H5P.GoalsPageXR",
   "coreApi": {
     "majorVersion": 1,
     "minorVersion": 19
   },
   "preloadedCss": [
     {
-      "path": "goals-page.css"
+      "path": "goals-page-xr.css"
     }
   ],
   "preloadedJs": [
     {
-      "path": "goals-page.js"
+      "path": "goals-page-xr.js"
     },
     {
-      "path": "goal-instance.js"
+      "path": "goal-instance-xr.js"
     }
   ],
   "preloadedDependencies": [
