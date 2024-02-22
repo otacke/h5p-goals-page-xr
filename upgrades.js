@@ -1,7 +1,7 @@
 /** @namespace H5PUpgrades */
 var H5PUpgrades = H5PUpgrades || {};
 
-H5PUpgrades['H5P.GoalsPage'] = (function () {
+H5PUpgrades['H5P.GoalsPageXR'] = (function () {
   return {
     1: {
       5: function (parameters, finished, extras) {

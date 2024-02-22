@@ -4,7 +4,7 @@ var H5P = H5P || {};
  * Goals Page module
  * @external {jQuery} $ H5P.jQuery
  */
-H5P.GoalsPage = (function ($, EventDispatcher) {
+H5P.GoalsPageXR = (function ($, EventDispatcher) {
   // CSS Classes:
   var MAIN_CONTAINER = 'h5p-goals-page-xr';
 
@@ -189,7 +189,7 @@ H5P.GoalsPage = (function ($, EventDispatcher) {
       goalTypeDescription = competenceAim.description;
     }
 
-    var newGoal = new H5P.GoalsPage.GoalInstance(goalPlaceholder, self.goalId, goalTypeDescription, goalText);
+    var newGoal = new H5P.GoalsPageXR.GoalInstance(goalPlaceholder, self.goalId, goalTypeDescription, goalText);
     self.goalList.push(newGoal);
     self.goalId += 1;
 
@@ -235,7 +235,7 @@ H5P.GoalsPage = (function ($, EventDispatcher) {
   /**
    * Returns the goal instance matching provided id
    * @param {Number} goalInstanceUniqueId Id matching unique id of target goal
-   * @returns {H5P.GoalsPage.GoalInstance|Number} Returns matching goal instance or -1 if not found
+   * @returns {H5P.GoalsPageXR.GoalInstance|Number} Returns matching goal instance or -1 if not found
    */
   GoalsPage.prototype.getGoalInstanceFromUniqueId = function (goalInstanceUniqueId) {
     var foundInstance = -1;
@@ -250,7 +250,7 @@ H5P.GoalsPage = (function ($, EventDispatcher) {
 
   /**
    * Create a new goal container
-   * @param {H5P.GoalsPage.GoalInstance} goalInstance Goal instance object to create the goal from
+   * @param {H5P.GoalsPageXR.GoalInstance} goalInstance Goal instance object to create the goal from
    * @returns {jQuery} New goal element
    */
   GoalsPage.prototype.createNewGoal = function (goalInstance) {
@@ -400,7 +400,7 @@ H5P.GoalsPage = (function ($, EventDispatcher) {
     definition.interactionType = 'fill-in';
     definition.correctResponsesPattern = [];
     definition.extensions = {
-      'https://h5p.org/x-api/h5p-machine-name': 'H5P.GoalsPage'
+      'https://h5p.org/x-api/h5p-machine-name': 'H5P.GoalsPageXR'
     };
 
     return definition;
